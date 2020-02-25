@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/hyperledger/myfabric/blockchian"
+	"github.com/hyperledger/fabric-sdk-go-sample/blockchian"
 	"log"
 )
 var (
@@ -9,6 +9,7 @@ var (
 	peer0Org2 = "peer0.org2.example.com"
 )
 func main() {
+
 	org1Client := blockchian.New("./config/org1-config.yaml", "Org1", "Admin", "User1")
 	org2Client := blockchian.New("./config/org2-config.yaml", "Org2", "Admin", "User1")
 	defer org1Client.SDK.Close()

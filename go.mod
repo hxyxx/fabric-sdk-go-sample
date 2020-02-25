@@ -1,4 +1,4 @@
-module github.com/hyperledger/myfabric
+module github.com/hyperledger/fabric-sdk-go-sample
 
 go 1.13
 
